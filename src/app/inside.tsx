@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function HomeScreen() {
+export default function InsideScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome!</Text>
+      <Text style={styles.title}>You are inside the app</Text>
     </View>
   );
 }
@@ -13,11 +13,13 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#F5F5DC',
+    paddingHorizontal: 24,
+    backgroundColor: '#808080',
   },
   title: {
-    fontSize: 32,
+    fontSize: 28,
     fontWeight: '600',
-    color: '#3E3A2F',
+    textAlign: 'center',
+    color: '#FFFFFF',
   },
 });
